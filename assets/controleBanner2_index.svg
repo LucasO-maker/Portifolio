@@ -1,0 +1,17 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="59.5067" height="59.5067" rx="10" fill="url(#paint0_linear_345_2133)"/>
+<rect x="12.3115" y="24.2218" width="35.9092" height="18.7353" rx="3" stroke="#060B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.2661 24.222V16.4156" stroke="#060B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.6792 29.6864V37.4928" stroke="#060B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.7759 33.5896L25.5822 33.5896" stroke="#060B27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="38.8536" cy="30.7509" r="1.1645" fill="#060B27" stroke="#060B27" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="38.8536" cy="36.4283" r="1.1645" fill="#060B27" stroke="#060B27" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M42.856 33.5895C42.856 34.2326 42.335 34.7545 41.6919 34.7545C41.0488 34.7545 40.5269 34.2326 40.5269 33.5895C40.5269 32.9464 41.0488 32.4254 41.6919 32.4254C42.335 32.4254 42.8559 32.9464 42.856 33.5895Z" fill="#060B27" stroke="#060B27" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.1787 33.5895C37.1787 34.2326 36.6578 34.7545 36.0146 34.7545C35.3715 34.7545 34.8496 34.2326 34.8496 33.5895C34.8496 32.9464 35.3715 32.4254 36.0146 32.4254C36.6577 32.4254 37.1787 32.9464 37.1787 33.5895Z" fill="#060B27" stroke="#060B27" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_345_2133" x1="0" y1="0" x2="59.5067" y2="59.5067" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E91C8C" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#05AFF2" stop-opacity="0.8"/>
+</linearGradient>
+</defs>
+</svg>
