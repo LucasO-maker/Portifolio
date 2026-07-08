@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Games</title>
+    <!-- Ícones Font Awesome -->
+    <link rel="icon" href="assets/Logo-Dr.Games.svg" sizes="64x64">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logoHeader">
+            <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <div class="navLinks" id="navLinks">
+
+                <a href="index.html" class="link">Home</a>
+
+                <details>
+                    <summary
+                        style="border-bottom: none !important; background: none !important; box-shadow: none !important;">
+                        Serviços<i class="fa-solid fa-chevrom-down"></i>
+                    </summary>
+
+                    <div class="dropdown">
+                        <a href="manutencao.html" class="link">Manutenção</a><br>
+                        <a href="orcamento.html" class="link">Orçamento</a><br>
+                        <a href="compra.html" class="link">Compra</a>
+                    </div>
+                </details>
+
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="avaliacoes.html" class="link">Avaliações</a>
+                <a href="contato.html" class="link">Fale Conosco</a>
+
+            </div>
+        </nav>
+
+        <form class="search" id="searchForm" action="busca.html" method="GET">
+            <input type="text" name="q" id="searchInput" placeholder="Pesquisar">
+            <div type="submit" class="search-btn" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+
+    </header>
+
+    <main>
+        <!-- Conteúdo das páginas continua aqui -->
+        <section class="heroPrincipal_index" aria-labelledby="tituloHero_index">
+            
+            <div class="cabecalhoHero_index">
+                <hr class="linhaChamadaHero_index">
+                <p class="chamadaHero_index">
+                    Assistência Técnica Especializada
+                </p>
+                <hr class="linhaChamadaHero_index">
+            </div>
+
+            <h1 class="tituloHero_index" id="tituloHero_index">
+                <span class="linhaHero_index">Seu</span>
+                <span class="linhaHero_index">aparelho</span>
+                <span class="blocoGradienteHero_index">
+                    <span class="linhaHero_index">merece o</span>
+                    <span class="linhaHero_index">melhor</span>
+                </span>
+            </h1>
+
+            <figure class="imagemHero_index">
+
+                <!-- COLOCAR AQUI: foto da fachada "DR GAMES"  -->
+                <img src="assets/frenteLojaHome.png" alt="Totem iluminado Dr. Games com logos do PS5, Xbox e Nintendo">
+                <span class="canto_index canto-top_index"></span>
+                <span class="canto_index canto-bottom_index"></span>
+
+            </figure>
+
+            <div class="botoesHero_index">
+                <a href="orcamento.html" class="botaoPrimario_index">
+                    Solicitar Orçamento
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="manutencao.html" class="botaoSecundario_index">
+                    Ver todos os Serviços</a>
+            </div>
+
+            <ul class="faixaHero_index">
+                <li class="itemFaixaHero_index">
+                    <img src="assets/escudoBanner_index.svg" alt="">
+                    <span class="textoBanner_index">3 meses de garantia</span>
+                </li>
+                <li class="itemFaixaHero_index">
+                    <img src="assets/seloBanner_index.svg" alt="">
+                    <span class="textoBanner_index">Técnicos Especializados</span>
+                </li>
+                <li class="itemFaixaHero_index">
+                    <img src="assets/estrelaBanner_index.svg" alt="">
+                    <span class="textoBanner_index">Avaliação média 4,7</span>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <!-- NOSSOS SERVIÇOS -->
+        <section class="sessaoServicos_index" aria-labelledby="tituloServicos_index">
+
+            <div class="trianguloContainer_index" aria-hidden="true">
+                <img src="assets/setasDireita_index.svg" alt="Três triangulos azuis apontando para a direita">
+            </div>
+
+            <h2 class="tituloServicos_index" id="tituloServicos_index">Nossos Serviços</h2>
+            <span class="linhaTituloServicos_index" aria-hidden="true"></span>
+
+            <div class="carrosselServicos_index">
+
+                <button type="button" id="setaServicosEsquerda_index"
+                    class="setaCarrossel_index setaCarrosselEsquerda_index" aria-label="Serviço anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="viewportServicos_index">
+                    <div class="trilhaServicos_index" id="trilhaServicos_index">
+
+                        <!-- ---------- CARD 1: CELULARES ---------- -->
+                        <article class="cardServico_index">
+                            <figure class="bannerServico_index">
+                                <img src="assets/princCelularBanner2_index.svg"
+                                    alt="Smartphone com tela trincada em tons neon rosa e azul"
+                                    class="imagemServico_index">
+                            </figure>
+                            <div class="conteudoServico_index">
+                                <h3 class="tituloCardServico_index">
+                                    <span class="iconeCardServico_index" aria-hidden="true">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </span>
+                                    Celulares
+                                </h3>
+                                <ul class="listaServico_index">
+                                    <li><i class="fa-solid fa-check"></i>Troca de tela</li>
+                                    <li><i class="fa-solid fa-check"></i>Troca de Bateria</li>
+                                    <li><i class="fa-solid fa-check"></i>Reparo de placa</li>
+                                    <li><i class="fa-solid fa-check"></i>Conector de carga</li>
+                                </ul>
+                                <a href="manutencao.html" class="linkVerMais_index">
+                                    Ver Mais
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ---------- CARD 2: VIDEOGAMES ---------- -->
+                        <article class="cardServico_index">
+                            <figure class="bannerServico_index">
+                                <img src="assets/princVideogameBanner2_index.svg"
+                                    alt="Nintendo Switch com joy-cons azul e vermelho" class="imagemServico_index">
+                            </figure>
+                            <div class="conteudoServico_index">
+                                <h3 class="tituloCardServico_index">
+                                    <span class="iconeCardServico_index" aria-hidden="true">
+                                        <i class="fa-brands fa-playstation"></i>
+                                    </span>
+                                    Videogames
+                                </h3>
+                                <ul class="listaServico_index">
+                                    <li><i class="fa-solid fa-check"></i>Limpeza interna</li>
+                                    <li><i class="fa-solid fa-check"></i>Troca de pasta</li>
+                                    <li><i class="fa-solid fa-check"></i>Conector HDMI</li>
+                                    <li><i class="fa-solid fa-check"></i>Upgrade de SSD</li>
+                                </ul>
+                                <a href="manutencao.html" class="linkVerMais_index">
+                                    Ver Mais
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- ---------- CARD 3: CONTROLES ---------- -->
+                        <article class="cardServico_index">
+                            <figure class="bannerServico_index">
+                                <img src="assets/princControleBanner2_index.svg"
+                                    alt="Controle de videogame preto com detalhes neon azul"
+                                    class="imagemServico_index">
+                            </figure>
+                            <div class="conteudoServico_index">
+                                <h3 class="tituloCardServico_index">
+                                    <span class="iconeCardServico_index" aria-hidden="true">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                    </span>
+                                    Controles
+                                </h3>
+                                <ul class="listaServico_index">
+                                    <li><i class="fa-solid fa-check"></i>Conserto de drift</li>
+                                    <li><i class="fa-solid fa-check"></i>Troca de botões</li>
+                                    <li><i class="fa-solid fa-check"></i>Reparo placa Bluetooth</li>
+                                    <li><i class="fa-solid fa-check"></i>Conector de Carga</li>
+                                </ul>
+                                <a href="manutencao.html" class="linkVerMais_index">
+                                    Ver Mais
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button type="button" id="setaServicosDireita_index"
+                    class="setaCarrossel_index setaCarrosselDireita_index" aria-label="Próximo serviço">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="sessaoWhatsapp_index" aria-label="Fale conosco pelo Whatsapp">
+
+            <a href="https://wa.me/5511970694328" target="_blank" rel="noopener noreferrer" class="botaoWhatsapp_index">
+                Ficou em Dúvida? Nos chame no Whatsapp
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </section>
+        <div class="trianguloInvertidoContainer_index" aria-hidden="true">
+            <img src="assets/setaEsquerda_index.svg" alt="Três triangulos azuis apontando para a direita">
+        </div>
+
+        <section class="sessaoLoja_index" aria-labelledby="tituloLoja_index">
+
+            <div class="cabecalhoLoja_index">
+                <span class="linhaChamadaLoja_index" id="linhaChamadaLojaEsquerda_index" aria-hidden="true"></span>
+                <span class="chamadaLoja_index">Loja Dr.Games</span>
+                <span class="linhaChamadaLoja_index" id="linhaChamadaLojaDireita_index" aria-hidden="true"></span>
+            </div>
+
+            <h2 class="tituloLoja_index" id="tituloLoja_index">Visite nossa loja</h2>
+
+            <ul class="badgesLoja_index">
+                <li class="badgeItem_index badgeRosa_index">
+                    <span class="iconeBadge_index" aria-hidden="true"><i class="fa-solid fa-credit-card"></i></span>
+                    <span>Novos &amp; Usados</span>
+                </li>
+                <li class="badgeItem_index badgeAzul_index">
+                    <span class="iconeBadge_index" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span>1 ano de Garantia</span>
+                </li>
+            </ul>
+
+            <article class="destaqueMes_index">
+                <span class="tagDestaque_index">PS5</span>
+                <div class="infoDestaque_index">
+                    <span class="labelDestaque_index">Destaque do Mês</span>
+                    <h3 class="nomeDestaque_index">PlayStation 5</h3>
+                    <p class="disponibilidadeDestaque_index">Consultar Disponibilidade</p>
+                </div>
+            </article>
+
+            <ul class="listaCategorias_index">
+
+                <li>
+                    <a href="compra.html" class="cardCategoria_index">
+                        <span class="iconeCategoria_index" aria-hidden="true">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </span>
+                        <span class="textoCategoria_index">
+                            <span class="tituloCategoria_index">Celulares</span>
+                            <span class="subtituloCategoria_index">Android - iOS</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right setaCategoria_index"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="compra.html" class="cardCategoria_index">
+                        <span class="iconeCategoria_index" aria-hidden="true">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </span>
+                        <span class="textoCategoria_index">
+                            <span class="tituloCategoria_index">Videogames</span>
+                            <span class="subtituloCategoria_index">PS5 - Xbox - Nintendo</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right setaCategoria_index"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="compra.html" class="cardCategoria_index">
+                        <span class="iconeCategoria_index" aria-hidden="true">
+                            <i class="fa-brands fa-playstation"></i>
+                        </span>
+                        <span class="textoCategoria_index">
+                            <span class="tituloCategoria_index">Controles</span>
+                            <span class="subtituloCategoria_index">DualSense - JoyCon</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right setaCategoria_index"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="compra.html" class="cardCategoria_index">
+                        <span class="iconeCategoria_index" aria-hidden="true">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </span>
+                        <span class="textoCategoria_index">
+                            <span class="tituloCategoria_index">Acessórios</span>
+                            <span class="subtituloCategoria_index">Cabos - Capinhas - Fones</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right setaCategoria_index"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="sessaoAvaliacoes_index" aria-labelledby="tituloAvaliacoes_index">
+
+            <i class="fa-solid fa-quote-left iconeAspas_index" aria-hidden="true"></i>
+            <h2 class="tituloAvaliacoes_index" id="tituloAvaliacoes_index">Avaliações</h2>
+
+            <div class="carrosselAvaliacoes_index">
+
+                <button type="button" id="setaAvaliacoesEsquerda_index"
+                    class="setaAvaliacao_index setaAvaliacaoEsquerda_index" aria-label="Avaliação anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="viewportAvaliacoes_index">
+                    <div class="trilhaAvaliacoes_index" id="trilhaAvaliacoes_index">
+
+                        <!-- ---------- CARD 1 ---------- -->
+                        <article class="cardAvaliacao_index">
+                            <div class="estrelas_index" aria-label="Avaliação 5 de 5 estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="textoAvaliacao_index">
+                                “O atendimento é de outro nível. Levei meu PS5 para limpeza e parecia novo quando
+                                peguei de volta. Melhor loja gamer da região sem dúvida”
+                            </p>
+                            <div class="autorAvaliacao_index">
+                                <div class="avatarAutor_index">C</div>
+                                <div class="dadosAutor_index">
+                                    <strong class="nomeAutor_index">Carlos Silva</strong>
+                                    <span class="usuarioAutor_index">@carlos.silva</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ---------- CARD 2 ---------- -->
+                        <article class="cardAvaliacao_index">
+                            <div class="estrelas_index" aria-label="Avaliação 5 de 5 estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="textoAvaliacao_index">
+                                “O atendimento é de outro nível. Levei meu PS5 para limpeza e parecia novo quando
+                                peguei de volta. Melhor loja gamer da região sem dúvida”
+                            </p>
+                            <div class="autorAvaliacao_index">
+                                <div class="avatarAutor_index">C</div>
+                                <div class="dadosAutor_index">
+                                    <strong class="nomeAutor_index">Carlos Silva</strong>
+                                    <span class="usuarioAutor_index">@carlos.silva</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ---------- CARD 3 ---------- -->
+                        <article class="cardAvaliacao_index">
+                            <div class="estrelas_index" aria-label="Avaliação 5 de 5 estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="textoAvaliacao_index">
+                                “O atendimento é de outro nível. Levei meu PS5 para limpeza e parecia novo quando
+                                peguei de volta. Melhor loja gamer da região sem dúvida”
+                            </p>
+                            <div class="autorAvaliacao_index">
+                                <div class="avatarAutor_index">C</div>
+                                <div class="dadosAutor_index">
+                                    <strong class="nomeAutor_index">Carlos Silva</strong>
+                                    <span class="usuarioAutor_index">@carlos.silva</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ---------- CARD 4 ---------- -->
+                        <article class="cardAvaliacao_index">
+                            <div class="estrelas_index" aria-label="Avaliação 5 de 5 estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="textoAvaliacao_index">
+                                “O atendimento é de outro nível. Levei meu PS5 para limpeza e parecia novo quando
+                                peguei de volta. Melhor loja gamer da região sem dúvida”
+                            </p>
+                            <div class="autorAvaliacao_index">
+                                <div class="avatarAutor_index">C</div>
+                                <div class="dadosAutor_index">
+                                    <strong class="nomeAutor_index">Carlos Silva</strong>
+                                    <span class="usuarioAutor_index">@carlos.silva</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ---------- CARD 5 ---------- -->
+                        <article class="cardAvaliacao_index">
+                            <div class="estrelas_index" aria-label="Avaliação 5 de 5 estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="textoAvaliacao_index">
+                                “O atendimento é de outro nível. Levei meu PS5 para limpeza e parecia novo quando
+                                peguei de volta. Melhor loja gamer da região sem dúvida”
+                            </p>
+                            <div class="autorAvaliacao_index">
+                                <div class="avatarAutor_index">C</div>
+                                <div class="dadosAutor_index">
+                                    <strong class="nomeAutor_index">Carlos Silva</strong>
+                                    <span class="usuarioAutor_index">@carlos.silva</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button type="button" id="setaAvaliacoesDireita_index"
+                    class="setaAvaliacao_index setaAvaliacaoDireita_index" aria-label="Próxima avaliação">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerTodo">
+            <div class="logoFooter">
+                <div class="logoTitulo">
+                    <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+                    <h3>DR. GAMES</h3>
+                </div>
+                <p>A assistência técnica mais confiável
+                    para seus dispositivos. Celulares, videogames
+                    e controles em boas mãos.</p>
+                <div class="redesSociais">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <h5>LINKS ÚTEIS</h5>
+                <a href="manutencao.html" class="link">Nossos Serviços</a>
+                <a href="compra.html" class="link">Catálogo de Produtos</a>
+                <a href="quemSomos.html" class="link">Sobre nós</a>
+                <a href="contato.html" class="link">Contato</a>
+            </div>
+
+            <div class="footerContato">
+                <div class="footerEndereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Afonso Moreno, 1024 Francisco Morato - SP</p>
+                </div>
+                <div class="footerTelefone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (11) 97069-4328</p>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>drgames615@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footerHorario">
+                <h5>HORÁRIO DE FUNCIONAMENTO</h5>
+                <div class="horarioItem">
+                    <span>Seg. a Sex.</span>
+                    <span>09:00 - 18:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Sáb.</span>
+                    <span>09:00 - 15:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Dom./Feriados</span>
+                    <span class="fechado">Fechado</span>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2026 Dr. Games. Todos os direitos reservados.</p>
+            <div>
+                <a href="#" class="link">Termos de Uso</a>
+                <a href="#" class="link">Política de Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+
+</body>
+
+</html>

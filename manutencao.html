@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Games</title>
+    <!-- Ícones Font Awesome -->
+     <link rel="icon" href="assets/Logo-Dr.Games.svg" sizes="64x64">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logoHeader">
+            <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <div class="navLinks" id="navLinks">
+
+                <a href="index.html" class="link">Home</a>
+
+                <details>
+                    <summary>Serviços<i class="fa-solid fa-chevrom-down"></i></summary>
+
+                    <div class="dropdown">
+                        <a href="manutencao.html" class="link">Manutenção</a><br>
+                        <a href="orcamento.html" class="link">Orçamento</a><br>
+                        <a href="compra.html" class="link">Compra</a>
+                    </div>
+                </details>
+
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="avaliacoes.html" class="link">Avaliações</a>
+                <a href="contato.html" class="link">Fale Conosco</a>
+
+            </div>
+        </nav>
+
+        <form class="search" id="searchForm" action="busca.html" method="GET">
+            <input type="text" name="q" id="searchInput" placeholder="Pesquisar">
+            <div type="submit" class="search-btn" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+
+    </header>
+
+    <!-- /**estrututura de imagem**/-->
+    <div class="bannerManutencao">
+
+        <div class="bannerimgManu bannerDestaqueManu">
+            <img src="assets/foto_manutencao.gif" alt="">
+            <span class="cantoManu canto-topManu"></span>
+            <span class="cantoManu canto-bottomManu"></span>
+
+        </div>
+        <div class="garantiaManu">
+            <h1>Manutenção</h1>
+            <div class="cardGarantiaManu textoCel">
+                <img src="assets/garantiaManuIcone.png" alt="">
+                <h4>3 meses de garantia</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="linhaDivisoria">
+    <br>
+    <br>
+
+    <section class="manutencoes">
+
+        <section class="containerCelManu">
+
+            <div class="textoCelManu">
+                <h3>ANDROID & IOS</h3>
+                <h2>CELULARES</h2>
+                <h4>Reparamos todas as marcas e modelos.</h4>
+            </div>
+
+
+            <div>
+                <img src="assets/imagemCel.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+
+                    <p>Troca de Tela / Tampa Traseira</p>
+                </a>
+
+            </div>
+
+
+
+            <div>
+                <img src="assets/trocaBateriaControle.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Troca de Bateria</p>
+                </a>
+
+            </div>
+
+
+            <div>
+                <img src="assets/conectorCarga.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Conector de Carga</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/cameraLente.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Câmera e Lente</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/falanteManu.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Alto-falante e Microfone</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/banhoQuimico.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Banho Químico</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/reparoPlaca.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Reparo de Placa</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/formatacaoSo.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Formatação e Software</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/reparoBotoes.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Reparo de Botões</p>
+                </a>
+
+            </div>
+
+            <hr class="linhaDivisoriaAzul">
+
+        </section>
+
+
+        <section class="containerVideoGameManu">
+
+            <div class="textoVideoGameManu">
+                <h3>PLAYSTATION, NINTENDO & XBOX</h3>
+                <h2>VIDEOGAMES</h2>
+                <h4>
+                    PS5, PS4/Pro/Slim, PS3, <br>Xbox Series X/S,
+                    Xbox One/S/X, 360,
+                    Nintendo Switch/Lite/OLED, Wii e portáteis.
+                </h4>
+            </div>
+
+            <div>
+                <img src="assets/limpezaManu.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Limpeza Interna Completa</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/trocaPastaVg.svg" alt="">
+
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Troca de Pasta Térmica</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/conectorHdmiVg.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+
+                    <p>Reparo de Conector HDMI</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/trocaHdVg.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Troca de HD / SSD</p>
+                </a>
+            </div>
+
+            <div>
+                <img src="assets/reparoFonteVg.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Reparo de Fonte</p>
+                </a>
+            </div>
+
+            <div>
+                <img src="assets/leitoresDiscoVg.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Leitores de Disco</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/sistemaSofVg.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Sistema e Software</p>
+                </a>
+
+            </div>
+
+            <hr class="linhaDivisoria">
+
+        </section>
+
+
+        <section class="containerControleManu">
+
+            <div class="textoControleManu">
+                <h3>DUALSENSE, XBOX & PRO CONTROLLER</h3>
+                <h2>CONTROLES</h2>
+                <h4>Manutenção completa de controles oficiais Sony, Microsoft, Nintendo.</h4>
+            </div>
+
+            <div>
+                <img src="assets/consertoControle.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Conserto de Analógico</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/trocaBotoesControle.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Troca de Botões e Gatilhos</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/trocaBateriaControle.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Troca de Bateria</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/conectorCarga.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Conector de Carga</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/trocaCarcacaControle.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Troca de Carcaça</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/limpezaManu.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Higienização Completa</p>
+                </a>
+
+            </div>
+
+            <div>
+                <img src="assets/reparoPlaca.svg" alt="">
+                <a href="https://wa.me/5511970694328" target="_blank">
+                    <p>Reparo de Placa e Bluetooth</p>
+                </a>
+
+            </div>
+
+            <hr class="linhaDivisoriaAzul">
+
+        </section>
+
+
+        <section class="whatsManu">
+            <h2>Dúvidas sobre seu dispositivo?</h2>
+            <p>
+                Fale com a gente pelo WhatsApp e descubra
+                o melhor serviço para o seu caso.
+            </p>
+            <a href="https://wa.me/5511970694328" target="_blank">
+                <img src="assets/botaoWhats-2.gif" alt=""></a>
+        </section>
+
+    </section>
+
+
+    <!----------------------------------FOOTER--------------------------->
+    <footer>
+        <div class="footerTodo">
+            <div class="logoFooter">
+                <div class="logoTitulo">
+                    <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+                    <h3>DR. GAMES</h3>
+                </div>
+                <p>A assistência técnica mais confiável
+                    para seus dispositivos. Celulares, videogames
+                    e controles em boas mãos.</p>
+                <div class="redesSociais">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <h5>LINKS ÚTEIS</h5>
+                <a href="manutencao.html" class="link">Nossos Serviços</a>
+                <a href="compra.html" class="link">Catálogo de Produtos</a>
+                <a href="quemSomos.html" class="link">Sobre nós</a>
+                <a href="contato.html" class="link">Contato</a>
+            </div>
+
+            <div class="footerContato">
+                <div class="footerEndereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Afonso Moreno, 1024 Francisco Morato - SP</p>
+                </div>
+                <div class="footerTelefone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (11) 97069-4328</p>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>drgames615@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footerHorario">
+                <h5>HORÁRIO DE FUNCIONAMENTO</h5>
+                <div class="horarioItem">
+                    <span>Seg. a Sex.</span>
+                    <span>09:00 - 18:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Sáb.</span>
+                    <span>09:00 - 15:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Dom./Feriados</span>
+                    <span class="fechado">Fechado</span>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2026 Dr. Games. Todos os direitos reservados.</p>
+            <div>
+                <a href="#" class="link">Termos de Uso</a>
+                <a href="#" class="link">Política de Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+
+</body>
+
+</html>

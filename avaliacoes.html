@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Games</title>
+    <!-- Ícones Font Awesome -->
+    <link rel="icon" href="assets/Logo-Dr.Games.svg" sizes="64x64">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="logoHeader">
+            <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <div class="navLinks" id="navLinks">
+
+                <a href="index.html" class="link">Home</a>
+
+                <details>
+                    <summary>Serviços<i class="fa-solid fa-chevrom-down"></i></summary>
+
+                    <div class="dropdown">
+                        <a href="manutencao.html" class="link">Manutenção</a><br>
+                        <a href="orcamento.html" class="link">Orçamento</a><br>
+                        <a href="compra.html" class="link">Compra</a>
+                    </div>
+                </details>
+
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="avaliacoes.html" class="link">Avaliações</a>
+                <a href="contato.html" class="link">Fale Conosco</a>
+
+            </div>
+        </nav>
+
+        <form class="search" id="searchForm" action="busca.html" method="GET">
+            <input type="text" name="q" id="searchInput" placeholder="Pesquisar">
+            <div type="submit" class="search-btn" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+
+    </header>
+
+    <main>
+        <!-- Conteúdo das páginas continua aqui -->
+        <section class="heroAvaliacoes">
+
+       
+            <div class="TextoAvaliacao_Raysan">
+                <span class="Principal">Avaliações</span>
+                <span class="PrincipalGradiente">de quem confia</span>
+
+
+                <div class="subtitulo_avaliacoes"><span>A satisfação dos nossos clientes é o que nos 
+                motiva a entregar sempre o melhor em assistência técnica.</span></div>
+            
+       
+
+
+            
+                <div class="estrelas_avaliacoes">
+                    ★★★★★ 
+                    <strong style="color: white;"> 4,7 de 5</strong>
+                </div>
+                <small>Com base em 169 avaliações</small>
+            </div>
+
+            <div class="imagemAvaliacoes">
+
+                 
+                <img class="fotoPrincipal" src="assets/avaliacoes.gif" alt="Totem iluminado Dr. Games com logos do PS5, Xbox e Nintendo">
+                <span class="canto_index canto-top_index"></span>
+                <span class="canto_index canto-bottom_index"></span>
+            </div>  
+
+        </section>
+
+
+        <section class="heroAvaliacoes_semespaco"><ul class="faixaHero_index">
+                <li class="itemFaixaHero_index">
+                    <img src="assets/escudoBanner_index.svg" alt="">
+                    <span class="textoBanner_index">3 meses de garantia</span>
+                </li>
+                <li class="itemFaixaHero_index">
+                    <img src="assets/seloBanner_index.svg" alt="">
+                    <span class="textoBanner_index">Técnicos Especializados</span>
+                </li>
+                <li class="itemFaixaHero_index">
+                    <img src="assets/estrelaBanner_index.svg" alt="">
+                    <span class="textoBanner_index">Avaliação média 4,7</span>
+                </li>
+ 
+            </ul></section>
+
+
+       
+     
+            <section class="avaliacoes">
+                
+                <div class="tituloLoja_avaliacoes">
+                    <span>LOJA DR.GAMES</span>
+                </div>
+               
+               
+               
+
+
+            <h3>O que nossos clientes dizem</h3>
+                 
+                <div class="avaliacoes-grid">
+
+                    <!-- Card 1 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "O atendimento é de outro nível. Levei meu PS5 para
+                            limpeza e parecia novo quando peguei de volta.
+                            Melhor loja gamer da região sem dúvida!"
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem1Avaliacao.gif" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>CARLOS SILVA</h4>
+                                <span>@carlos.silva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Atendimento excelente e muito rápido.
+                            Meu videogame ficou perfeito.
+                            Recomendo para qualquer pessoa."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/mulher1Avaliacao.gif" alt="Mulher">
+
+
+                            </div>
+
+                            <div class="info">
+                                <h4>AMANDA LIMA</h4>
+                                <span>@amandalima</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Comprei um controle novo e chegou muito rápido.
+                            Excelente atendimento e preço justo."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem3Avaliacao.gif" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>MARCOS LIMA</h4>
+                                <span>@marcoslima</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Levei meu Xbox para manutenção e ficou perfeito.
+                            Serviço rápido e de confiança."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem4Avaliacao.JPG" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>LUCAS ALVES</h4>
+                                <span>@lucasalves</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Ótimo suporte e muita atenção ao cliente.
+                            Voltarei sempre que precisar."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem8Avaliacao.gif" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>JOÃO PEDRO</h4>
+                                <span>@joaopedro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Minha experiência foi excelente.
+                            Equipe muito profissional e educada."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem7Avaliacao.gif" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>RAFAEL COSTA</h4>
+                                <span>@rafaelcosta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Os acessórios são de ótima qualidade.
+                            Recomendo a todos."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem6Avaliacao.gif" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>PEDRO HENRIQUE</h4>
+                                <span>@pedroh</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="avaliacao-card">
+                        <div class="estrelas_avaliacoes">★★★★★</div>
+
+                        <p>
+                            "Atendimento impecável do começo ao fim.
+                            Muito satisfeito com o serviço."
+                        </p>
+
+                        <div class="cliente">
+                            <div class="avatar">
+                                <img src="assets/homem5Avaliacao.gif" alt="Homem">
+                            </div>
+
+                            <div class="info">
+                                <h4>GABRIEL OLIVEIRA</h4>
+                                <span>@gabriel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Rodapé -->
+
+                <div class="avaliacoes-footer">
+
+                    <h3>
+                        Já foi nosso cliente?
+                        <span>Conte sua experiência!</span>
+                    </h3>
+
+                    <p>
+                        Sua avaliação ajuda outras pessoas a escolherem
+                        um serviço de confiança.
+                    </p>
+
+                    <a href="#" class="btn-avaliacao">
+                        DEIXAR UMA AVALIACAO
+                    </a>
+
+                </div>
+
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="footerTodo">
+            <div class="logoFooter">
+                <div class="logoTitulo">
+                    <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+                    <h3>DR. GAMES</h3>
+                </div>
+                <p>A assistência técnica mais confiável
+                    para seus dispositivos. Celulares, videogames
+                    e controles em boas mãos.</p>
+                <div class="redesSociais">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <h5>LINKS ÚTEIS</h5>
+                <a href="manutencao.html" class="link">Nossos Serviços</a>
+                <a href="compra.html" class="link">Catálogo de Produtos</a>
+                <a href="quemSomos.html" class="link">Sobre nós</a>
+                <a href="contato.html" class="link">Contato</a>
+            </div>
+
+            <div class="footerContato">
+                <div class="footerEndereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Afonso Moreno, 1024 Francisco Morato - SP</p>
+                </div>
+                <div class="footerTelefone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (11) 97069-4328</p>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>drgames615@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footerHorario">
+                <h5>HORÁRIO DE FUNCIONAMENTO</h5>
+                <div class="horarioItem">
+                    <span>Seg. a Sex.</span>
+                    <span>09:00 - 18:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Sáb.</span>
+                    <span>09:00 - 15:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Dom./Feriados</span>
+                    <span class="fechado">Fechado</span>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2026 Dr. Games. Todos os direitos reservados.</p>
+            <div>
+                <a href="#" class="link">Termos de Uso</a>
+                <a href="#" class="link">Política de Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+
+</body>
+
+</html>

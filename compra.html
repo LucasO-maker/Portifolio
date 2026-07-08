@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Games</title>
+    <!-- Ícones Font Awesome -->
+     <link rel="icon" href="assets/Logo-Dr.Games.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logoHeader">
+            <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <div class="navLinks" id="navLinks">
+
+                <a href="index.html" class="link">Home</a>
+
+                <details>
+                    <summary>Serviços<i class="fa-solid fa-chevrom-down"></i></summary>
+
+                    <div class="dropdown">
+                        <a href="manutencao.html" class="link">Manutenção</a><br>
+                        <a href="orcamento.html" class="link">Orçamento</a><br>
+                        <a href="compra.html" class="link">Compra</a>
+                    </div>
+                </details>
+
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="avaliacoes.html" class="link">Avaliações</a>
+                <a href="contato.html" class="link">Fale Conosco</a>
+
+            </div>
+        </nav>
+
+        <form class="search" id="searchForm" action="busca.html" method="GET">
+            <input type="text" name="q" id="searchInput" placeholder="Pesquisar">
+            <div type="submit" class="search-btn" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+
+    </header>
+
+    <main>
+        
+        <div class="Enfeite">
+            <img src="assets/EnfeiteCompras.svg" alt="Setas de Enfeite">
+        </div>
+    <div class="Banner">
+        <div class="BannerTexto"><span>Consultar</span><span class="GradienteBanner">disponibilidade</span></div>
+        <img src="assets/banner_Compras.svg" alt="Imagem Banner">
+    </div>
+
+            <!-----------------------CARROSEL CELULARES--------------------->
+    <div class="BannerTexto-carrosel"><span>Celulares</span></div>
+    <div class="LinhaGradiente"></div>
+
+     <div class="carrossel-container">
+
+    <button class="btn-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="assets/Cell-Samsung.svg" alt="Celular Samsung">
+                <span>Samsung</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Xiaomi_Compras.png" alt="Celular Xiaomi">
+                <span>Xiaomi
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Cell-Motorola.svg" alt="Celular Motorola">
+                <span>Motorola</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Cell-Iphone.svg" alt="Celular Iphone">
+                <span>Iphone</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+
+<!-----------------------CARROSEL VIDEOGAMES----------------------->
+
+<div class="BannerTexto-carrosel"><span>Videogames</span></div>
+    <div class="LinhaGradiente"></div>
+
+     <div class="carrossel-container">
+
+    <button class="btn-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="assets/Consoles_Playstation.svg" alt="">
+                <span>Playstation</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Consoles_Xbox.svg" alt="">
+                <span>Xbox</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Consoles_nintendo.svg" alt="">
+                <span>Nintendo</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Pc_gamer_Compras.png" alt="Computador Gamer">
+                <span>Computador</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+
+
+<!-----------------------CARROSEL ACESSÓRIOS----------------------->
+
+<div class="BannerTexto-carrosel"><span>Acessórios</span></div>
+    <div class="LinhaGradiente"></div>
+
+     <div class="carrossel-container">
+
+    <button class="btn-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="assets/Acessorios_carregadores.svg" alt="Carregador de Celular">
+                <span>Carregadores</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Acessorios_capinhas.svg" alt="Capinhas de Celular">
+                <span>Capinhas de <br>Celular</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/Acessorios_Fones.svg" alt="Fones de ouvido">
+                <span>Headset</span>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/smartwatch_compra.png" alt="SmartWatch">
+                <span>SmartWatch</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="btn-next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+      
+<section class="sessaoWhatsapp_index" aria-label="Fale conosco pelo Whatsapp">
+
+            <a href="https://wa.me/5511970694328" target="_blank" rel="noopener noreferrer" class="botaoWhatsapp_index">
+                Consultar no Whatsapp
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerTodo">
+            <div class="logoFooter">
+                <div class="logoTitulo">
+                    <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+                    <h3>DR. GAMES</h3>
+                </div>
+                <p>A assistência técnica mais confiável
+                    para seus dispositivos. Celulares, videogames
+                    e controles em boas mãos.</p>
+                <div class="redesSociais">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <h5>LINKS ÚTEIS</h5>
+                <a href="manutencao.html" class="link">Nossos Serviços</a>
+                <a href="compra.html" class="link">Catálogo de Produtos</a>
+                <a href="quemSomos.html" class="link">Sobre nós</a>
+                <a href="contato.html" class="link">Contato</a>
+            </div>
+
+            <div class="footerContato">
+                <div class="footerEndereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Afonso Moreno, 1024 Francisco Morato - SP</p>
+                </div>
+                <div class="footerTelefone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (11) 97069-4328</p>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>drgames615@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footerHorario">
+                <h5>HORÁRIO DE FUNCIONAMENTO</h5>
+                <div class="horarioItem">
+                    <span>Seg. a Sex.</span>
+                    <span>09:00 - 18:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Sáb.</span>
+                    <span>09:00 - 15:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Dom./Feriados</span>
+                    <span class="fechado">Fechado</span>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2026 Dr. Games. Todos os direitos reservados.</p>
+            <div>
+                <a href="#" class="link">Termos de Uso</a>
+                <a href="#" class="link">Política de Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

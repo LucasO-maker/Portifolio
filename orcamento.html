@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Games</title>
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logoHeader">
+            <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+
+        <nav>
+            <div class="navLinks" id="navLinks">
+
+                <a href="index.html" class="link">Home</a>
+
+                <details>
+                    <summary>Serviços<i class="fa-solid fa-chevrom-down"></i></summary>
+
+                    <div class="dropdown">
+                        <a href="manutencao.html" class="link">Manutenção</a><br>
+                        <a href="orcamento.html" class="link">Orçamento</a><br>
+                        <a href="compra.html" class="link">Compra</a>
+                    </div>
+                </details>
+
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="avaliacoes.html" class="link">Avaliações</a>
+                <a href="contato.html" class="link">Fale Conosco</a>
+
+            </div>
+        </nav>
+
+        <form class="search" id="searchForm" action="busca.html" method="GET">
+            <input type="text" name="q" id="searchInput" placeholder="Pesquisar">
+            <div type="submit" class="search-btn" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+
+    </header>
+
+    <!------------------------------BODY------------------------------------------------->
+    <main>
+ 
+        <div class="formulario-nav-orcamento">
+            <h1>ORÇAMENTO <span class="espress">EXPRESS</span></h1>
+            <p>Solicite o reparo do seu console, controle ou celular. Preencha abaixo e nossa equipe entrará em contato!
+            </p>
+            <img src="assets/orcamentoImagem.gif" alt="Imagem orçamento">
+        </div>
+ 
+        <!-- FORMULÁRIO -->
+        <section class="formulario-orcamento">
+ 
+            <form action="" method="post">
+ 
+                <div class="form-informacoes-pessoais">
+                    <h2>Informações Pessoais</h2>
+ 
+                    <div class="input-nome">
+                        <label for="nome">Nome Completo:</label>
+                        <input id="nome" type="text" placeholder="Digite seu nome completo" required>
+                    </div>
+ 
+                    <div class="input-telefone">
+                        <label for="telefone">Whatsapp:</label>
+                        <input id="telefone" type="tel" placeholder="11 99999-9999" required>
+                    </div>
+ 
+                    <div class="input-cpf">
+                        <label for="cpf">CPF:</label>
+                        <input id="cpf" type="text" placeholder="123.456.789-00" required>
+                    </div>
+ 
+                    <div class="input-email">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="Digite seu email" required>
+                    </div>
+                </div>
+ 
+            </form>
+ 
+        </section>
+ 
+        <section class="tipo-aparelho-orcamento">
+ 
+            <h2>Tipo de Aparelho</h2>
+ 
+            <div class="cards">
+ 
+                <div class="card">
+                    <img src="assets/videogame_orcamento.gif" alt="Videogame">
+                    <h3>Videogame</h3>
+                </div>
+ 
+                <div class="card">
+                    <img src="assets/controle_orcamento.gif" alt="Controle">
+                    <h3>Controle</h3>
+                </div>
+ 
+                <div class="card">
+                    <img src="assets/celular_orcamento.gif" alt="Celular">
+                    <h3>Celular</h3>
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+        <section class="detalhes-aparelho-orcamento">
+ 
+            <h2>Detalhes do Aparelho</h2>
+ 
+            <div class="detalhes-form-orcamento">
+ 
+                <div class="input-marca">
+                    <label for="marca">Marca</label>
+                    <input list="marcas" id="marca" name="marca" placeholder="Apple" required>
+ 
+                    <datalist id="marcas">
+                        <option value="Sony (PlayStation)">
+                        <option value="Microsoft (Xbox)">
+                        <option value="Nintendo">
+                        <option value="Motorola">
+                        <option value="Apple">
+                        <option value="Xiaomi">
+                        <option value="Samsung">
+                    </datalist>
+                </div>
+ 
+                <div class="input-modelo">
+                    <label for="modelo">Modelo</label>
+                    <input id="modelo" type="text" placeholder="Ex: PS5, iPhone 15 Pro" required>
+                </div>
+ 
+                <div class="input-descricao">
+                    <label for="descricao">Descrição do problema</label>
+                    <textarea id="descricao" placeholder="Descreva o problema..." required></textarea>
+                </div>
+ 
+                <button type="submit">Solicitar Orçamento</button>
+ 
+                <p>Ao enviar, você concorda com nossos termos de privacidade e autoriza o contato via WhatsApp.</p>
+ 
+            </div>
+ 
+        </section>
+ 
+    </main>
+    
+    <footer>
+        <div class="footerTodo">
+            <div class="logoFooter">
+                <div class="logoTitulo">
+                    <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+                    <h3>DR. GAMES</h3>
+                </div>
+                <p>A assistência técnica mais confiável
+                    para seus dispositivos. Celulares, videogames
+                    e controles em boas mãos.</p>
+                <div class="redesSociais">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            
+            <div class="footerLinks">
+                <h5>LINKS ÚTEIS</h5>
+                <a href="manutencao.html" class="link">Nossos Serviços</a>
+                <a href="compra.html" class="link">Catálogo de Produtos</a>
+                <a href="quemSomos.html" class="link">Sobre nós</a>
+                <a href="contato.html" class="link">Contato</a>
+            </div>
+
+            <div class="footerContato">
+                <div class="footerEndereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Afonso Moreno, 1024 Francisco Morato - SP</p>
+                </div>
+                <div class="footerTelefone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (11) 97069-4328</p>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>drgames615@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footerHorario">
+                <h5>HORÁRIO DE FUNCIONAMENTO</h5>
+                <div class="horarioItem">
+                    <span>Seg. a Sex.</span>
+                    <span>09:00 - 18:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Sáb.</span>
+                    <span>09:00 - 15:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Dom./Feriados</span>
+                    <span class="fechado">Fechado</span>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2026 Dr. Games. Todos os direitos reservados.</p>
+            <div>
+                <a href="#" class="link">Termos de Uso</a>
+                <a href="#" class="link">Política de Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+
+</body>
+
+</html>

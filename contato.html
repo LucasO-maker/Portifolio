@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Games</title>
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logoHeader">
+            <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+        </div>
+
+        <div class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <div class="navLinks" id="navLinks">
+
+                <a href="index.html" class="link">Home</a>
+
+                <details>
+                    <summary>Serviços<i class="fa-solid fa-chevrom-down"></i></summary>
+
+                    <div class="dropdown">
+                        <a href="manutencao.html" class="link">Manutenção</a><br>
+                        <a href="orcamento.html" class="link">Orçamento</a><br>
+                        <a href="compra.html" class="link">Compra</a>
+                    </div>
+                </details>
+
+                <a href="quemSomos.html" class="link">Quem somos</a>
+                <a href="avaliacoes.html" class="link">Avaliações</a>
+                <a href="contato.html" class="link">Fale Conosco</a>
+
+            </div>
+        </nav>
+
+        <form class="search" id="searchForm" action="busca.html" method="GET">
+            <input type="text" name="q" id="searchInput" placeholder="Pesquisar">
+            <div type="submit" class="search-btn" aria-label="Pesquisar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+    </header>
+
+    <!-----------------------------------COMEÇO DA PAGINA--------------------------------------->
+    <main>
+        <section class="hero-faleConosco">
+            <div class="heroImagem-faleConosco">
+                <img src="assets/controleHome.gif" alt="Controle de Videogame">
+                <span class="cantoFaleConosco cantoTopoImgFaleConosco"></span>
+                <span class="cantoFaleConosco cantoBaixoImgFaleConosco"></span>
+            </div>
+
+            <div class="heroTexto-faleConosco">
+                <h1>FALE <span>CONOSCO</span></h1>
+                <p>
+                    Tem alguma dúvida, precisa de um orçamento ou deseja acompanhar<br>o status do seu aparelho? Entre
+                    em contato conosco.
+                </p>
+
+            </div>
+        </section>
+        <section class="blocosContato-faleConosco">
+            <div class="formsFaleConosco">
+                <h3>Envie sua mensagem</h3>
+                <p>Preencha o formulário abaixo que entraremos em <br> contato.</p>
+
+                <form class="formsEnvieMensagem" action="#" method="post">
+                    <div class="campo-faleConosco">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" name="nome" id="nome-formsContato" required>
+                    </div>
+
+                    <div class="campo-faleConosco">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email-formsContato" name="email" required>
+                    </div>
+
+                    <div class="telefoneEAssunto">
+                        <div class="campo-faleConosco">
+                            <label for="telefone">Telefone/Whatsapp *</label>
+                            <input type="tel" id="telefone-formsContato" name="telefone" required>
+                        </div>
+
+                        <div class="campo-faleConosco">
+                            <label for="assunto">Assunto *</label>
+                            <input type="text" id="assunto-formsContato" name="assunto" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-faleConosco">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea name="mensagem" id="mensagem-formsContato" rows="4" required></textarea>
+                    </div>
+
+                    <button class="btnFormFaleConosco" type="submit">
+                        Enviar Mensagem
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="cartaoContatoFaleConosco">
+                <h3>Nossos Contato</h3>
+                <p>Escolha a melhor forma de falar conosco.</p>
+
+                <ul class="listaContato">
+                    <li class="itemContato">
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <div>
+                            <h4>Whatsapp</h4>
+                            <p>+55 (11) 97069-4328</p>
+                        </div>
+                    </li>
+
+                    <li class="itemContato">
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>drgames615@gmail.com</p>
+                        </div>
+                    </li>
+
+                    <li class="itemContato">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Afonso Moreno, 1024 <br>
+                                Francisco Morato - SP
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="itemContato">
+                        <i class="fa-regular fa-clock"></i>
+
+                        <div>
+                            <h4>Horário de atendimento</h4>
+                            <p>
+                                Segunda a Sexta: 09h às 18h <br>
+                                Sábado: 09h às 15h
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button class="btnWhatsapp-faleConosco">
+                    Chamar no Whatsapp
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="ondeEstamosFaleConosco">
+            <div class="tagLojaFaleConosco">
+                <hr>
+                <span>LOJA DR.GAMES</span>
+                <hr>
+            </div>
+
+            <h2>Onde estamos</h2>
+
+            <div class="localFaleConosco">
+                <div class="iconeLocal-ondeEstamos">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <h4>Francisco Morato — SP</h4>
+                    <p>Av. Afonso Moreno, 1024 - Res. Casa Grande I</p>
+                </div>
+            </div>
+
+            <div class="mapaFaleConosco">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.5692476762724!2d-46.748984624678016!3d-23.295096478983705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee6cc96e77665%3A0x8806208fbbe588a6!2sDr.%20Games%20Assist%C3%AAncia%20T%C3%A9cnica!5e0!3m2!1spt-BR!2sbr!4v1782934112200!5m2!1spt-BR!2sbr"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="duvidasFrequentesFaleConosco">
+            <i class="fa-solid fa-quote-right iconeAspas"></i>
+
+            <h2>DÚVIDAS FREQUENTES</h2>
+            <p>Confira algumas respostas das dúvidas mais comuns</p>
+
+            <div class="listaAccordionFaleConosco">
+                <details class="itemAccordion">
+                    <summary>Vocês fazem orçamento ?</summary>
+                    <p>Sim, realizamos orçamento gratuito para videogames e celulares. Entre em contato e solicite o
+                        seu.</p>
+                </details>
+
+                <details class="itemAccordion">
+                    <summary>Quanto tempo demora o conserto ?</summary>
+                    <p>O prazo varia conforme o defeito e a disponibilidade das peças. Informamos o prazo após a análise
+                        do aparelho.</p>
+                </details>
+
+                <details class="itemAccordion">
+                    <summary>Vocês oferecem garantia ?</summary>
+                    <p>Sim, todos os nossos serviços possuem garantia. O tempo de garantia varia conforme o serviço.</p>
+                </details>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footerTodo">
+            <div class="logoFooter">
+                <div class="logoTitulo">
+                    <img src="assets/Logo-Dr.Games.svg" alt="Logo">
+                    <h3>DR. GAMES</h3>
+                </div>
+                <p>A assistência técnica mais confiável
+                    para seus dispositivos. Celulares, videogames
+                    e controles em boas mãos.</p>
+                <div class="redesSociais">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <h5>LINKS ÚTEIS</h5>
+                <a href="manutencao.html" class="link">Nossos Serviços</a>
+                <a href="compra.html" class="link">Catálogo de Produtos</a>
+                <a href="quemSomos.html" class="link">Sobre nós</a>
+                <a href="contato.html" class="link">Contato</a>
+            </div>
+
+            <div class="footerContato">
+                <div class="footerEndereco">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Av. Afonso Moreno, 1024 Francisco Morato - SP</p>
+                </div>
+                <div class="footerTelefone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55 (11) 97069-4328</p>
+                </div>
+                <div class="footerEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>drgames615@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footerHorario">
+                <h5>HORÁRIO DE FUNCIONAMENTO</h5>
+                <div class="horarioItem">
+                    <span>Seg. a Sex.</span>
+                    <span>09:00 - 18:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Sáb.</span>
+                    <span>09:00 - 15:00</span>
+                </div>
+                <div class="horarioItem">
+                    <span>Dom./Feriados</span>
+                    <span class="fechado">Fechado</span>
+                </div>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2026 Dr. Games. Todos os direitos reservados.</p>
+            <div>
+                <a href="#" class="link">Termos de Uso</a>
+                <a href="#" class="link">Política de Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/header.js"></script>
+
+</body>
+
+</html>
